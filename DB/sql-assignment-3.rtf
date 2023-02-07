@@ -1,0 +1,783 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq2\fcharset0 Calibri;}{\f6\fnil\fprq0\fcharset0 monospace;}{\f7\fnil\fprq2\fcharset0 Microsoft YaHei;}{\f8\fnil\fprq2\fcharset0 Calibri;}{\f9\fnil\fprq2\fcharset0 Arial;}{\f10\fswiss\fprq0\fcharset128 Arial;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red119\green0\blue136;\red68\green68\blue68;\red0\green85\blue170;\red153\green153\blue119;\red17\green102\blue68;}
+{\stylesheet{\s0\snext0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393 Normal;}
+{\*\cs15\snext15\cf9\ul\ulc0\langfe255\alang255\lang255 Internet Link;}
+{\s16\sbasedon0\snext17\sb240\sa120\keepn\dbch\af7\dbch\af9\afs28\loch\f4\fs28 Heading;}
+{\s17\sbasedon0\snext17\sl276\slmult1\sb0\sa140 Text Body;}
+{\s18\sbasedon17\snext18\sl276\slmult1\sb0\sa140\dbch\af10 List;}
+{\s19\sbasedon0\snext19\sb120\sa120\noline\i\dbch\af10\afs24\ai\fs24 Caption;}
+{\s20\sbasedon0\snext20\noline\dbch\af10 Index;}
+}{\*\generator LibreOffice/6.1.3.2$Windows_X86_64 LibreOffice_project/86daf60bf00efa86ad547e59e09d6bb77c699acb}{\info{\creatim\yr2023\mo2\dy6\hr16\min34}{\revtim\yr2023\mo2\dy6\hr18\min13}{\printim\yr0\mo0\dy0\hr0\min0}}{\*\userprops}\deftab709
+\viewscale85
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default Style;}}
+\formshade{\*\pgdscno0}\paperh16838\paperw11906\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep\chftnsep}\pgndec\pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\qc\sb0\sa200{\dbch\af8\dbch\af8\rtlch \ltrch\loch\fs40\lang9\loch\f5\hich\af5
+MYSQL}
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\qc\sb0\sa200{\dbch\af8\dbch\af8\rtlch \ltrch\loch\fs40\lang9\loch\f5\hich\af5
+Assignment-}{\dbch\af8\dbch\af8\rtlch \ltrch\loch\fs40\lang9\loch\f5\hich\af5
+3}
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\qc\sb0\sa200{\ul\ulc0\b\dbch\af8\dbch\af8\ab\rtlch \ltrch\loch\fs36\lang9\loch\f5\hich\af5
+Retrieve data using Group By clause }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\qc\sb0\sa200\b\ab\rtlch \ltrch\loch
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+Sample table1:Department }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+-dept_id}
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\fs28\lang9\loch\f5\hich\af5
+ }{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+-dept_name }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+Sample table2: Employee }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+-emp_id }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+-dept_id }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+-mngr_id }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+-emp_name }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+-salary }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b0\afs28\ab0\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b0\afs28\ab0\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b0\afs28\ab0\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b0\afs28\ab0\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b0\afs28\ab0\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b0\afs28\ab0\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b0\afs28\ab0\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b0\afs28\ab0\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b0\afs28\ab0\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b0\afs28\ab0\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b0\afs28\ab0\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b0\afs28\ab0\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b0\afs28\ab0\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+1. write a SQL query to find Employees who have the biggest salary in their Department}
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+==>}
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{{\field{\*\fldinst HYPERLINK "http://localhost/phpmyadmin/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html" \\t "mysql_doc" }{\fldrslt {\cf9\ul\ulc0\langfe255\alang255\lang255\scaps0\caps0\cf17\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+SELECT}{}}}\scaps0\caps0\cf18\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.emp_id}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+,}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.emp_name}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+,}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+,}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.salary}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+from}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+employee}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+INNER}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+JOIN}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf20\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+(}{{\field{\*\fldinst HYPERLINK "http://localhost/phpmyadmin/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html" \\t "mysql_doc" }{\fldrslt {\cf9\ul\ulc0\langfe255\alang255\lang255\scaps0\caps0\cf17\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+SELECT}{}}}\scaps0\caps0\cf18\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+k}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+,}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{{\field{\*\fldinst HYPERLINK "http://localhost/phpmyadmin/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html%23function_max" \\t "mysql_doc" }{\fldrslt {\cf9\ul\ulc0\langfe255\alang255\lang255\scaps0\caps0\cf17\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+max}{}}}\scaps0\caps0\cf20\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+(}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+k}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.salary}{\scaps0\caps0\cf20\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+)}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+as}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+salary}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+FROM}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+employee}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+k}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+GROUP}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+BY}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+k}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf20\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+)}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+et}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+on}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf5\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+=}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+et}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+WHERE}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.salary}{\scaps0\caps0\cf5\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+=}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+et}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.salary}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+;}{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+ }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+OUTPUT:-}
+\par \shpwr2\shpwrk3\shpbypara\shpbyignore\shptop0\shpbxcolumn\shpbxignore\shpleft2085\pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+{\*\flymaincnt5\flyanchor0\flycntnt}{\shp{\*\shpinst\shpwr2\shpwrk3\shpbypara\shpbyignore\shptop0\shpbottom3219\shpbxcolumn\shpbxignore\shpleft2085\shpright7553{\sp{\sn shapeType}{\sv 75}}{\sp{\sn wzDescription}{\sv }}{\sp{\sn wzName}{\sv }}{\sp{\sn pib}{\sv {\pict\picscalex152\picscaley148\piccropl0\piccropr0\piccropt0\piccropb0\picw239\pich145\picwgoal3585\pichgoal2175\pngblip
+89504e470d0a1a0a0000000d49484452000000ef0000009108060000002b58ef08000000017352474200aece1ce90000000467414d410000b18f0bfc61050000
+00097048597300000ec300000ec301c76fa86400001e1349444154785eed5d6d7714c795eeffc2af31074d7fdbb3c11ba35fb161598bb55e66f4c9b14ebc39f1
+4a60ebc0ccc801fbc440124b228b913492000b11cb0822303048331a9b0326d80224cd8c6eeead97eeea9e6a6906b5c6b4b837e73974dfaef77b9faa5be54cc9
+01161696440a93978525a1c2e4656149a830795958122a4c5e1696840a93978525a1c2e4656149a838f57a1df603486c7ac6fe1c9ba4f689647d633312ad8853
+ad56613f80c4a667eccfb1496a9f486ca4d568459cf5f575d80f20b1e919fb736c92da27d16e0b69355a11e7c58b17b01f4062d333f6e7d824b54f2436d26ab4
+22cedada1aec0790d8f48cfd393649ed13898db41aad88f3ecd933d80f20b1e919fb736c92da27121b69355a11e7e9d3a7b01f4062d333f6e7d824b54f2436d2
+6ab422cee3c78fe197c0d217bf85038787e072c3b7293876b81b8ecd86f5db83c4a667343336af36e63e30ff7f7d064bd66f12af9fbd65bd6f7f71dbf26def40
+6223ad462be23c7af4087e09fcbc41ffcdab0a2f1bbe5d836e1cd4ee1b61fdf620b1e919cd8ccdab8db9c6a5ffed86035de7e081e59bc6eb676f596fe7e83dcb
+b7bd03898db41aad8853a95440e3e6e7efe3ec8886401cfefc5ba95f3c0387e9fda8fe360827bd74efc3c945cafb2d9c3c8a693e1c146903f92320eb1a84bf89
+f7cb7054e53bf0e1c7ca988d79b60349837e6a50b593cabd2c757bd99fa3837014f389b28e9e819be29b2c4b96efeb65ffdfc77628fd8767fc745e5e84ad0f2d
+c23a36db8cb9d50f443bb07f1faa3cda7666fbcc7687d0167b9be5228e4e49fddfbc3613741b3479bfc367bb8d64df948d48a7c6c0ec83aea35990d848abd18a
+38e5721904befd23fcc7e101f84c4c0e37a0071bf69b49d4df3b079dd4c9f1b2d0f7e2f33b5fd273053e3b8ecf171630ff5df8b40b3bd8751ebea7ec8bc3d8c9
+dfc2896f55d9167cf7e500a6f90466f179fc7798f7f89f4154bdf08918c0ee797bbe289004755fc16fb09cde45fa826dc5f6fdea336ceb9ef66700fe48191efd
+59d4f12e8d5ff99fb02eff8f35aa9c0fe03496a3d39fa5f44affa99757a689ec83a5feed4012d6458e79941fccab340ba4976375e0775f41f9f926cc9f5465d5
+d7e19fa17a34f6dede6558f8ec032c6b18e6c55780cde7528f4d94a2ec725cd8e5aa24ef9777f1d96e23dde79e9ba8a7be3d9f13fe22f24f7e2ceabaa6ea6816
+2436d26ab422cecaca0a085ca5c6e0a01a38f297bfc3ca77d2d97bfefe14d35d111d96cf778483777e79c77f1e7f084fa9ace279cc33009f7ea7cab6e0ae32e6
+0c3ecf0c617d27be9679d7e400755f6fccb31d4802ba6ffe0447543f3c0c4eef6d7f8e5f80d2537c5775e83e7c73d65fc988b0548eecff305ca5f4d7c949d4b3
+c8abea8aea43a8ee9dd0303688c8318ff203d5c66b6b94ff295c3d81df86aef86561d87cd7283f8c3db737e2e9fabc284bb7fb5767b1ddf4edf2ff793a82ac4b
+da5edadb6ea3609f096b708d26aa8f2ec1d847f8efc939585375370b121b69355a11a7582c82c003e9a072c695527ff9048a77be908e3847e96487e5f33f6044
+38fb3fbce703ef7e06f354d61572800118b9a3cab6e08e32e6343e4f0be3ff49e6bd74520ca0aca3799004744fae895543ae5a4a367fdedbfe747d0177e8ddac
+e3d247c201c46a206675598ed9ffe21c39897a1679555d517d5075360b92b02e72cca3fc40b411579d4b947f1e72343e485ebf2cd5f708ecb9bd057e066f91bd
+88f591fd6e8cc0bfebfea895d7b4bdb077848d027651f87981be63fb11bd0baf660b1b69355a11e7fefdfb20f0f80554a8c3aa6107fe330f73a45f928ef8de1c
+a59b85f7bce7db902767ffeb6dff79e863785be5efbc5882178f55d9162cfd551ab380cf3f6dc8f055d4fb874fc4b3aca3799004753fc18630842af7f047f017
+d2ef657fd08197e8ddace327b9b28836fcf780d0ffcf6cb0fff795938867917700f24b546e441f5a44e3d86c33e6517e20da380ceffd41e9c9d9377e92e58daa
+f43aad057b6f6fc4ff130975fb905cdfbe80c78f8b7086427ca1fb003af1f9c89fe730bdb4bdb077848d0276d1f869596e1930ec2ffd64e89b04898db41aad88
+73f7ee5dd078f4a2a6d428b517f088f48f5e0069379e519a67b0e13d3f024a5e7bf1089f6f49671f5d166949a4de2f3b0c59d7063c13efb25c211b1b461dcd83
+a441ffcc2b1545d5b597fdd966cc84d46a9e3ed07fd14eb37d3578f148966bed438b2069d4478fb9d50fbe968e7ccdcfe4b5c54bafd35ad07e7beb32a55da5e0
+c8e2b3b4a56c83f92cc4b051c02e1e946f8c1723fbba1d486ca4d568459ca5a525d83d16d5aab518d45fcdc2bfe919cdc4fba3c1743180c4a67f35fcf2fd8913
+b18ccd3549de29db378dc4dabb4978fd1b86b9e73fd8d3ec00121b69355a11e7d6ad5bb07b54608d66b4b54a505f5913b35883ac3f0da68b012436fdabe197ef
+4f9c20b1e95bc253fa45cc3a3cb57dd348acbd9b84d7bf1dc6611b88dc16d26ab422cecd9b37613f80c4a667eccfb1496a9f486ca4d568459c858505d80f20b1
+e919fb736c92da27121b69355a11e7c68d1bb01f4062d333f6e7d824b54f2436d26ab422cef5ebd7613f80c4a667eccfb1496a9f486ca4d568451c5b010cc6eb
+0ec771acfad71dd4eeb884c9cb482498bc4c5e4642c1e465f232120a262f93979150307999bc8c8482c9cbe46524144cde369077a2cf110df6d10713f4ed6116
+3ab4ae230b459d67b2cf4bdb717ad92f2b4a1f0159afaa4ba1783ad5a05bdf98825e2705a71e9aba6538d5a1dae641a531da61a2775295a5fb22d205eba236c9
+740c0fdfd00f1ed40f1806e7acfa77465782791034e661ddee407ea0ed69f883e9a77d535e7ae94b96f43bf829e9e3923d276f6d4bd54432db0ffdb35b502372
+a43230a3d495bc0b69edfc4e0666a516f2ae1e94287d340a19175cd751e5129621eb922e0305235df134eafa33e0a67dc3ac6f94b08e7e559f92d90c3894c6eb
+5005468c34f51ae59b868c9b87152aa38065627da6c10b190732055d07637d63053eedd2d7d6d0353f03f06999f473f09efe713ceacf7a7a1f4402f37db7a089
+35a38d59c9839ba24998fcd485bcbc7a0a5dc09f7cc996fd9e836c41bd4afa9dfd3451e4f54033587a463af9c31cb8993ce4f4ea860e5f167a1cb4fe192437e5
+a9411949ed6669f62ae34068d211b132302d062b1a44de7cbe5f128e74aa4ebf1c02111a2791ad55a1f757495987497222a39399f6df6d69c2e4cdaf36189cc9
+6ba206f52d9acce9b924487a76159fcb17a0f3e40dcf0fbebf38003d0b3a8f44dce4a539594ec088aab6630da6c98f56a45ef854899e9721870b83f05d829ea0
+2dfe1bb67722c93b91c68eafd6e5fb0a76d2a177d9085a7953146208bd4f227276375fc26732f20ca4c560a5309f367834c4409767a01f8d40616c318b033963
+4e0288c9341292061bcb9fc9c836886f444cc3380238a36ea9f67b6976226f099d6216322a7c66f2464087c8276ec8156c15c97b62defbbe3a3e009de3c1d099
+6c62bec7075a3da5af56f1bd46137b4afa407a46afb005b4a91f75791334f9af31c1afd0e2930b86ce544e5cd226f24e411a9dbaac574bea24ce50722036a13a
+4dab5a0167bc3aac8e60a8a90893c2b033335d93ab3692675a34590ee64e7b4741de1522ab0bd987b8c2e2aa5bae0509379136c98970736aef4de90ce3f45388
+149e309a23effa461dea1472e3eccce48d80de8a2c0ecbfdad85bc3d37d10f8c3c642ff33d16787e6686c1b458c8e64da3bfc87d2cda14d3687f2869925ac82b
+fc57bd13a8dd71497bc83b498e5c16339978af4a52e9fd009188be0b927b7b0680191da6d0a020294a223f85323b9340925785dee9346444fd06e1d050297704
+7726bed00c2af7c84162d6b670ff920aef5f9a252f3ea37352d9643826af09dadb7e0257d57b49acb03866d579e8c13dafd4afc0190aa72b66be3d202f1d34a5
+f2b834989334da93c8ac16194152b22991dc3b64956729f9329294c26d4c2f2347a51761b68fc491b7980bcf4018a6ae5288ac57bc1158add3f73a948d95d70b
+536845c681d37a2733ebef4f2220c98bab7a99ea51836b108ec2e8c08482a8ad8ea8838a3031757bcdd3e316c88ba0f0b91fdbcee435812b9879c15ed705f841
+f981a9efbcb8ea45691ae407e6fbee400753cab734043955d4a475685be1a7217fa4b30dd9be607a5fef83f471495bc85bad2309c364c301f00ea2712fa94944
+69b598794c3da5f7ca89406dcb27fe961706f9072454de967014231fa5156df1d305be0566654b1a329eee0baeb6c1f2f11b367da749e78d83777a8f62f881a9
+6fb013824810d6bd3ac896aa322d861d3d31da67fa63a07d4db43b2e69db8115831127e2256ffbc0e465bcf160f232791909059397c9cb482898bc4c5e4642c1
+e465f232120a262f92f7f1931f81c1481a880436fdeb0e262fe38d079397c9cb482898bc4c5e4642c1e465f232120a262f93979150307999bc8c8482c9db06f2
+8e76a99f5379380ea34fc6a02ba043748dc93c63c73ddd5b43b7fdb2a2f4dbc1c823a0eb408c761d84c15b667a6a13b58d9e6fc3e041239f80fcb6387430a427
+c8b2e85bd75854f9ba5c5d0743e0ca09ff2781c73e87258bfeed734b0df968dcc3baddc1f449c346b74ec05b5a6ff8cfabfa29e9e3923d27ef4bf34fa58b0be8
+6af0f2c97ae02fa8cff6f7c36c6d1dd3d300a6fd0bbc52871401a2f4db8006b12317fcb17dda1fd0cb6917b2f7cc3c1390c63a2e8be7fb90758317d0554652d0
+8179d736e9877d24b3d0effd98bf0e9b6b3fc2bdac0be909595e63f9ba5c5d07e3f193693876f81375d11cc0a3f101f8b520aaa9a70be83e80e13bc1bc4402f3
+7db7581cea80b432b8b6b5986c0fa5fc0be8d07fe4e4fcea7e9a28f27aa019acb700b5f5a09e56abde02119ade8b90f39c9b1c3d0353488ac7b74e41aabfa0d2
+3c87e5bc0b7d97647e3b70d03b523052de8435434f13497df3b978de99bc41921131ddec7def5da477b3702f9486c9db0a6812d7b6ff11d61686a173ec013cbe
+730e3a4f5ef7ec5d4652775f37f3c54f5e9a94b56ffab6fe0afadc3c2c930fa2fe65a11f52a790d451fed8849f2692bca3dd388395687535f563d09dca43c923
+f473d8ac1740de9f7b08b26565d87b5970d3135e3e1a5c3188eabd1138e88e223ebd9be1b30a7d7626af4aaf81ed2c2be27be999bcf181c2e477cfc3f734c6c5
+f3d039f4b5f7ad3836009d5f064367b289f91e0f74e89c816961eb908d27d2e0f47d15ed8f4df829b53b2e691379c7a0179d5fcf601ec67a21955ff65747b1bf
+e88582685a19b2875498621994cc9449a43068054fc1291db2acab20bd32e295b333798361332ed981559cc91b1f96cefd160e0c5ef7c7d842de9e85a0bdf786
+bc7a3b870bc8c113b06821af9b2b46fb63137e9a3cf28649aa30da8babf1b2d139eabc9b8307e2fd394cd185704486b529c820a9f561d270ca855c51e5b10257
+70ba91f21019c0d72f0ea7c05183fb20e782d36d1e40f482e3853ccd908cc91b072effbe1b7e3d56068c597dfdda1cf41cfe588dd312e4ba06e04cc9cf43889b
+bc74b0aa0f1b45f82b6c2b178161b5088cf63a928c51fed8849f268ebc8ba7529695f2b6f8ab095e684b58db8472def83312e959b50fc11971164316a54fe5cb
+e28028585e08b4da4e87fe3449dfb4e7246b9b6518095c3a96568766943f0ef29a6523c44c4ee586f4e609e69b863b9fc33bfaa43970b28cf65ef4ffdcc991f1
+467bd3d899efbbc5cbda2c465eda2eb8a888f3125c04ca794869fd8efeb8b39f923e2e690b79cdc3001fb4bff50f2b34fcd35c147336d6a12f8a3e74da11461e
+216679a27ea51762b6c5deb620d050a150daec67e0949d44a40dd7891268d31b069cacc3c3e1d976077b1309c2badd01eda9eac31a7dd2996d6cc61f9b68775c
+d2b6032b06234ec44fdef680c9cb78e3c1e465f232120a262f93979150307999bc8c8482c9cbe46524144c5e24afed863b06e3750791c0a67fddc1e465bcf160
+f232791909059397c9cb482898bc4c5e4642c1e465f232120a262f939791503079db40de893ef5732a0f7d30b131a56ecb30d03725f34cfa3fe3eb38bdec9715
+a5df06c5d3c6cf0b9d149c7aa8be3dcc4287aecf02912ffcdda8df839166a2cf285fa7efc84251bf33ecf8c6ffe91fdda451b2e8df195d69c847e31fd6ed0ea6
+4f928f2a3df98ac5deafeaa7a48f4bf69cbcb52d551389b8806e0b6a1bf5c04fc1c405745b754c4f0398f12ff0a2db300421a2f4d11004cccc881c422a7970b5
+5156f039336dcd4775a5b1aefe8c1baca3900177c4bcceae0223ae9fa680e9f32b2a2d19308d75639faa3a3fc3823978eff0b07f01ddc5013822886aeae902ba
+01f8b41ccc4b2430df778be2691732eaea94ca880b2941bc65389542bbea0be8320ef44e52fa57f7d34491d703cd60e8d0f55a504f244bcf10a1e9bd8c1dce40
+413c97c4f374753b7d1496812eaf931382d255ebb085ff13f56c47de4922e92ad467f0dfac31731279f325232db5c327ac475e83b87e5a861d34896bdb6f42f5
+e630748ee318972f40e7c91b4a5f83ef91d43d0b66bef8c95bad6f79beb9927795ad0b9071f35056be569be90737873ef110fda77fc66b5f19d3670af81ca517
+ef128924ef441a9d7b35ecd0b8cad1e07884ae417d6b46dd6890c2f4dab051fa28c841f742b03022c9ab66da720dd66bab48ceb41f3e217969e04db87924b932
+ac206f56854c91ab3a23121426775d801fea38f6ab48de13f3deb7d5f10124753074a67136dfe3810e9d333043edd898167eb4a2bf930f640a0dfe23c84ea48e
+d2ab7702b53b2e6913791549c3ab25ad72f9b21f5a8afd05aeaaa269489e940a53a2f4665901982bb58fe2e494dc834691f7610e43eb2041d3ba1e336ca68bec
+dc1158150696df0b1852e930bd8246dbbe7d0c13a5d101383074c3df6658c8db73d31f6bc2de90576fe770a110e7158de4257fb59134338ded8bd2ab7742f2c8
+1b26a982588d6995d33aeabcb762d6601a0921c28e28bdced70019b2040e18700248392e64690f1241de893496abf63d4288a42975e86486cd148263586d964f
+2bef888a2caa759a6076de973336e1ea20dd51b51adc6654e7a107f7bc57c5fb0a9cc13defd98a9f87103779e960d59b7029fc15a4a54540f90ca521ff203256
+91d4b898c8a88cb668e8c7257c8ed28b7789c491b7986b9c81a873b9f0de1549b14aa4c30e0a2093c43e244a1f282f08dac3d00ae8e541e2e62bb8afa1fa88bc
+9e5ea21757e5b4d30fd366b958ef0cdd60494635c94ba86d89030c7da21838b0a2307f95ea60026f8bf279e8d427cd8193655c0117873d5de7457f7ba2413633
+df778bdad62c12cff0159c88ab9e1d95def33b6cdfacbf8df2b74f517a1fa48f4bda425ef330c007ed631bf7ae94d61363368ed26f87401e50c4a56fe2f02a28
+f55af0f044834ecb45dbf161cb0893f537adab615f0286127584748c202c76f0c6d8f8cf14e171271009c2badd4187cc2411be62fa5d54fb9a68775cd2b6032b
+06234ec44fdef680c9cb78e3c1e465f232120a262f93979150307999bc8c8482c9cbe46524144c5e24afed863b06e3750791c0a67fddc1e465bcf160f2327919
+09059397c9cb482898bc4c5e4642c1e465f232120a262f939791503079db40ded12ef5732a0fc76194bedd3a016f695dd798977e71e8a097f6ada1db7e5963c7
+edfa2898e5138c3a08663d8e7310066f19799f8c419799f7e00958b4e6d3c0fc237efb4c748d99e532a270f9f7dd70ec8aa1bb72c2fb49e0dbe79602690934b6
+61ddee10b2b9f697083f8df4c71dfc94f471c99e93f7654dd544222ea0abc1cb27b761f050cabfd82bad9d7c0cba5379906afa7d658f24ba18d8b47fb157ea50
+886c6104cb27f1eb5004ec93f77208a9e421a5271565c4b4f1a3fc4a3ee511786d53ff706c16fadd11d5d63a6c6eea8ed2c574fdaaad00b575b35d8c462cc1f0
+3149d2eebf6bdd341c3bfc897101dd07307cc7ccb307e4bd750a529e3d516aeba88ff653bb3feeeca78922af079ac17a0bca999fc354c685ec3df9ed72da855c
+919ed7a156df8435916702d2381097455e1cd8fe02925ee65dcebb901ade6ef5a5f21de8bbe4eb68129175df86e15406668571d4f7b54da41f4d2af83cd60ba9
+914a80744458fae17d776015c5f6b959b8e7bd6bdc87acabdacdd81957be803f7e0f307fd220ef9d73d079f2ba67eff2f800745f57df146227ef25ffca563f12
+fb0afadc3c2cafc9342f0bfd903a857e67f147e16b517a5d072291e41dedc619ace413e665ad0cd94372b07a0bb872a90122e8d03435529203712f0baed3ab56
+c61fe1529f036ef6be97de06226ba1571b03e1853c64901c3c08a5d7583c9582ccd4f306fd839c0be90953c7e48d05eb9bc2f657860cf216cf43e7d0d75e9ae2
+d800747e190c9dc9a6e6fb6e4176f7ef28c348ec10455a211b4fa43162fb4afa637ac2cb7b2f8b8b09913a4aafde09d4eeb8a44de41d835e0c87f50c26c38b43
+902dcb4610c9ccfd810e4dcbd943324cc195b13ce25fa0de9172ad040bc30cd92bb90e554711726e1f5c0aa55d1c1b9361f154a661c00934613079f70e3b91b7
+672168efb8c94b3e57df5475ac4de1968d7ca491bc6eae6825a9f0c728bd7a27248fbc148ae69755384cc041713230a5c84cab9a584929b4360e877cc2e05e18
+d3eb7de43486dc32cc8e024d0e7a0f2b41a494ab358533381198870f58ef21a7038629545a2f88bb8ccc83261109a446a06484d24cde781120efda1cf41cfe58
+8de112e4ba06e04cc94f4b889bbc74b0ead91cfdd511e12f4df429e917940617194146416e1d09d2364cf963945ebc4b248ebc8da128ee6d673104c18e08e0aa
+5ca6598f56582296d6a767d5de731d4ac6ca1b0eb31b81e55772fe9fa92074e4641df89d66595a89bd6f74177445978979719a9077442bd0219ab717d760f2c6
+890079c9068bfe9f3b39325e6eb037d9c57cdf2d5ed64c9ba7d599c873d82cd361a6d21bfe68fa6f2aafdb17a5f741fab8a42de425b298074002eb464c6b1043
+87cc428c432553df50960de210ca9010f902f5d06971609089c086341057a5b1ead1e07575f8c5681afe81a282e11f5e386b804810d6ed0ea6cd0dfb997e641e
+7246b5af8976c7256d3bb06230e244fce46d0f98bc8c371e4c5e262f23a160f232791909059397c9cb482898bc4c5e4642c1e445f2da6eb863305e7710096cfa
+d71d4c5ec61b0f262f93979150307999bc8c8482c9cbe46524144c5e262f23a160f2327919090593b70de49de8533fa7f2d00713f4ed61d6ffc95edf949f67d2
+bf8ea4e3f4b2a72f9e367e2a68a6df09544f28bd28cbd32dc3a90e077a27fdef761d634ff08dffd3bf03ef9e879245ffcee84a433ef283b06e7798825eed5fda
+47092dfa69a45e81f471c99e93b7b6a56a221117d06d418dc89172fd8bbd329a283480fa47f715c8bb2938f510f5388029575f4c67a66f022b797033d3866e4a
+5c04d09f7165d91b35a86fd16561bec188dc9919807a4de761ec0de6e0bdc3c3eaa23980471707e08820aaa9a70be806e0d372302f91c07cdf2d8aa75dc8a8db
+1e2a232ea404f15af4d348bd8f4491d703cd60e91945880264908ce5aafc569be907278db3da43245aff0c929bf43528e771400bf85cadc3d6561daaaaac92d6
+abf76d1126ef6406dc9155a8cfd0cd1a7a664402afe62145332b4d14c85c266e3b5007b4acb2f726546f0e43e77809d6cb17a0f3e40dcf0fbe4752f72c98f9e2
+276fb5bee5d97c05fdcbcd633b2c7eeae6d067a2fc344a2fde251249de8934ce60ab75f53e0d19c785ac9a958a39171c22588868621069b0d4bb484b216f2be4
+0a94a966d2720dd66bab3833a6fdf008278855accfc1997306278a40198cbd0785c95d17e0873ada6615c97b62defbb63a3e80a40e86ce7193574287cee803d4
+0ef25324ef8afe5ec8a0ef15a2fdb409ff4d2079315435663031e3cee2408881723024a699ae6ced7c669a0651bed3fe39955f0568855c66990f73e0aa3a35d2
+46f85d2d635a6fe664b40ba5d10138307443d855445716f2f6dcf4fd8040b633dfe3014502243390eec842d142de6dfd7407ff2550bbe392f690974255ecb40e
+7bf50aa86fdaa4154f74b24a2b7246ad86cb904552e74b2a7d07120df7a15b6246d4e54480427431f8f82c664b39a01369c7dbd708a98c809b52e908a1c167ec
+3dae0ed21d55a109b93a0f3db8e7bd2ade57e00cee79cf56fc3c84b8c94b0b83778e42e1af206d19a3333f4214feb39d9f46faaf8fc49197c2e2e00c847b4cdc
+73524708b49aca3038b822bba4a7d57ad2b8ac4e61db032b0c8167323a2d4e12225ca783aa7e9836c36d95ce5b7d99bced45f93c74ea93e6c0c932fac1e2b0a7
+ebbca8fcc0c84bb635df778bda16fd850edf67688b575567215eb48633ffb67e1aa9f741fab8a42de4350f033c18c7d081d5d4a60f1c594bd969cfeb67c1baf5
+c01a8723663aaf2c7530667e67ec2168bc9595b4d86c6e8bb6880461ddee40fea145fb0cc26ca3e91b51ed6ba2dd7149db0eac188c38113f79db03262fe38d07
+9397c9cb482898bc4c5e4642c1e465f232120a262f93979150307991bcea5f169644099120a9884b98bc2c2c0915262f0b4b4285c9cbc2925061f2b2b0245498
+bc2c2c0915262f0b4b4285c9cbc2925061f2b2b0245498bc2c2c0915262f0b4b4285c9cbc2924801f81787235f993ac5ab9a0000000049454e44ae426082}}}}}
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+2}{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+. }{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+write a SQL query to find Departments that have less than 3 people in it.}
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+==>}
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{{\field{\*\fldinst HYPERLINK "http://localhost/phpmyadmin/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html" \\t "mysql_doc" }{\fldrslt {\cf9\ul\ulc0\langfe255\alang255\lang255\scaps0\caps0\cf17\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+SELECT}{}}}\scaps0\caps0\cf18\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+d}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+,}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+d}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_name}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+FROM}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+employee}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+JOIN}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+department}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+d}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+on}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf5\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+=}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+d}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+GROUP}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+by}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+dept_id}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+HAVING}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{{\field{\*\fldinst HYPERLINK "http://localhost/phpmyadmin/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html%23function_count" \\t "mysql_doc" }{\fldrslt {\cf9\ul\ulc0\langfe255\alang255\lang255\scaps0\caps0\cf17\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+COUNT}{}}}\scaps0\caps0\cf20\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+(}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+emp_id}{\scaps0\caps0\cf20\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+)}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf5\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+<}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf21\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+3}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+;}{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+ }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+OUTPUT:-}
+\par \shpwr2\shpwrk3\shpbypara\shpbyignore\shptop0\shpbxcolumn\shpbxignore\shpleft3717\pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+{\*\flymaincnt5\flyanchor0\flycntnt}{\shp{\*\shpinst\shpwr2\shpwrk3\shpbypara\shpbyignore\shptop0\shpbottom1470\shpbxcolumn\shpbxignore\shpleft3717\shpright5922{\sp{\sn shapeType}{\sv 75}}{\sp{\sn wzDescription}{\sv }}{\sp{\sn wzName}{\sv }}{\sp{\sn pib}{\sv {\pict\picscalex100\picscaley100\piccropl0\piccropr0\piccropt0\piccropb0\picw147\pich98\picwgoal2205\pichgoal1470\pngblip
+89504e470d0a1a0a0000000d4948445200000093000000620806000000542be1a9000000017352474200aece1ce90000000467414d410000b18f0bfc61050000
+00097048597300000ec300000ec301c76fa86400000e1349444154785eed9d7b5353491ac6fbbbcc77d91a5c49fedbadb27677fc105b3b38023308097fccba6b
+cd4cd5cc80174408a3ebec8eae2bc40b82c0c41b302a22974151a4322a8a480c21243edb6f5f9293a40f1072ac024e3f55bff19ceeb7dfeed3fda4cf0943021b
+1c1cc4952b5770e6cc19df72f9f2650c0d0dc1aa32b1dbb76f63656505a954cab7d0f5d33cd00bcb6aeb62efdebd834572e9d225bc7fff5e4d8d55b962cbcbcb
+b048e89697cd66d5d458952bb6b4b4048b84cc6477a6ad8b2d2e2ec28d89a37bc01873b0074727ccb18b13139830957b02cf2dfabd84fa3d473f583fd64c9589
+bd7af50a6ecc7404d11c53914259a413a6d828eaf6b661a6a4dc1bc65bf7a2a1978e53c864d3481862bcc09aa932b1972f5fc28d5fb999427dc5e56368a962a8
+eda6e36ed4b22a7cf965b5dcb96abbf1b2bb16555555fcbc16dd632da8caed6a5568192bcac563f5ae27f3bdc4584b156a6b5579550bc6781f0db9f6bc3f5166
+6a2bc7a5cbaa5ac644beee5a5d66e8bf086ba6cac49e3f7f0e37a64f05738b23f8f83bdc7ffe16abd91842ec200e1e6408c5b2585b1b4273b00bf1b5249ef785
+c0c2f4339b3524a79f605ef6837857104d579df92fe2200b416e7c32df45dd6748be458f47aaf1c5c524e678db66decfeadb3e8482a7306d6c3b8d53c120bae2
+b22c5c7d9c8ff5220e05f8b8441cb577f65f8a35536562f1781c6e4cf1852db8cd6557b124ea92588b71d38462584bd2b95ce429aae3660a763c923996a670fc
+e3bc19437d32afe0ee49049a079154f9069b03387957f5399814314bd7c3089cbc2bca645bd58fb1ed14375318d7971c71bc6e8e1b52f7ffd905aa73c79aa932
+b1f9f979b831d9ce77936ba6baf338b0b7035d4d0c07ced3f9353405db314975d79a106c9f1471e70ffc1eed6a6b8a35b3c25c6ffa116687705ee53bc4c2e87f
+23fb0cb48d8a98d1b600c2fd6f1ce350fd18db4ea23dd8846ba22c3f9e3729f5563fde85c0a1f322af1bd64c9589cdcdcdc18d09be88fa55ada939770e356c2f
+3ae65348a5636862bfc337c333e808f2fa9a7398eb25334d88f6898170ae5d43533337c9b0237f02e95853aebe29c61fac559fc16af52eb23a82a789392cf653
+1eeaa7579864c2d8764298a957e4d671345619c35835224f138efe4bb166aa4cecc9932770e3f54ae90ff0d2cbcb48f3e78f95d714a38f5f4384a697f1649997
+acbc9639f8b1563aed28d738eb9765d9436ea6f090ea37bb82d7b938ea87f757502625dbd218d25816b9751c8d4f4b8fd91d6ba6cac41e3f7e8cedc438ddd2ae
+9aeb3e34d64c9589cdcccc603bf13299e1efbacc751f1a6ba6cac4a6a6a6303d3ded7b681e7a7a7aac992a10ebededc5c4c4042627277d0b5dffd5ab57d1dfdf
+6fcd5481585f5f1fa2d1a8d8e2fd0afdea0919897e73c06aeb12bf82f2f6ed5bdf43f390c964d4b4586d458cfe435bbbdfb1aa5cc24c56565ec89ac9ca335933
+5979266b262bcf64cd64e599ac99ac3c9335939567b266b2f24cd64c569ec99ac9ca335933597926469faddf2d904ce5167748a9d5b42be588adadad61b74032
+955bdc21994ca42947ccf47d453b1592a9dce28e9833838934e588259349ec1648a6728b3b24938934e588251209ec1648a6728b3b24938934e568577d3f13c9
+546e7187643291a61cadfbfd4c3b0d92a9dce20ec964224d39620b0b0b303380cff635e0b398a96e33f0f607ce62d2582799fce91ff8685f2bfa4aeab6d637c9
+549e23d6ead2dfe6a0f16e7d3eb62724938934e588bd78f102666ea1812f68c3a8a96e637abf69c04775e7f0d850a7595ea59f73ac61a5a46e6b7d934ce53946
+4f70339dc00d53dd464cfc0b7fae603eb62b24938934e5a8e82b75fa50c327ec23e2ebe36a4165ddd88f87653967df8ff765fc400b3f6f41cdd7aa0d3fbe922b
+576535673096cb5f88cca9daacd3f7662195943bc652f3bd34534cd439facb8d418da9865f538daa13e3bf8f6307752ccf33e0c85f008fe3edf67ddd827d2ab6
+70ae4a735ca1b9ab39ec883fe39887be82bcb2ed611c7ba0fbab1c92c9449a7254f0953a97bee283adbf00e1d77b34f17c414778ddfdd3f8d3be23382b2a4671
+88977f7a9d978fa8987b541ec7d97adefeab6b987f97c6c831952b9bc21b471f4e7eed3ec2dbf3c5e5c7ae7d17b5590f5261d9357ccaf3ecbf2c27ed562b2d86
+a3bf63a3a2fcc5653e8e9ad3b8c7cbe5988ee0f46f54338a46defe4f67a791faed02f6f3e3c60740fa9db30f27d3f8a18ee7ad3b0f6a2ef2ee3b8a4b54c7e744
+4acdd3777c9e78794c8ca90dc3bc46c61fc72d0a7bd0268ea9edbdb3fc71a04ecd8d286f91393d80643291a61c157ca5cecf7461476f6391ce1377c444360cf3
+e39bc7f905d045e7f9e47fbf606e9816bd0db712d47e11378ff2bad61bf95cfc3637edc85fccb432d3cffcd8b56f47fc46900acb6e881deed02f8be23c718f16
+82fafb059db4e88eeba185bbce63c498eaff8b678bd4fe114ef385dfdf3d85b95fcf0933ad3fa62961a6fd979e88eb705e1f7dcd0f193bd79f739eeacf6356c7
+ab6339b7b2edf516473bc11174de75f6bb7548261369ca119b9d9d85664818e03f18a1f3de6362e00d77f8f1e3f37c22f5ce24955d7985d93b7207a9efa5f623
+7281f824e573fd842947fe62a6d4640ff163d7be1df11b412a2c9366fae4c28838bff81d2d04f5f70a37c8f86a67924a6399c7c831fd132747a9fd203ee7edf7
+774f6076ea2769a675c734812e3213c5f3f3fcf58de0fb4ff938c40ea97626c33c89783d67626ee5dc3c8e92c9d4ce2494c5caabe2beb706c964224d39628f1e
+3d82e6edaadcd685fbbf3d218ebfb8c3eb1692888b2d58d5fd2d823bd4465c701bbef85695f3e391d5b7325f8f8ad7b106262fcac91ee4c7ae7d17b5590f5261
+d95bac8adb82cc5bd72277a692fe387fbd2adb8831d59fc0e707541d5fc4787281cf817c53e08c2de5212264a68b0fc579fefa16f0f4527efefe52c78f6bff2d
+e66590761d6ea0491daf8ee5dccab12e249fe1ac6327fde30f778afadd3a24938934e588157e1bc8125655055657c5f1ea92ac7b91747c743a93c40b8abf2d2f
+f856be119654ae5cbc8e352063741bf7be370ba9a47c299795a715594bfbe3d27d3d140b7a0ecff4e5e6c69f8f771fd70bd02565922fc4b9f3fa9cf3273e86ae
+f28ae1a96311a3fb13157aac32af96ceef0524938934e58899be1564d3dc92661a30d5696e76e00fea1555c0e11e737c05904ce5e530ae768771439de6dc61c3
+f5ecfb3bbeb9698edfce904c26d29423363e3e8e2db348ffd7398545539d269e80e34595576ad11c5f0124537939c413b43b241037d469c46597288344dc1cbf
+9d21994ca429476c6c6c0cbb0592a9dce20ec964224d3962f7eeddc36e81642ab7b843329948538ed8e8e828760b2453b9c51d92c9449a72c4868787b15b2099
+ca2dee904c26d29423664a60f10f5eca9ac9e778296b269fe3a5ac997c8e97b266f2395eca9ac9e778296b269fe3a576a0999ea2bd3a80f627a6ba42664f05d0
+785dfeabff365d9ecde5d8ed78a91d66a601340a2304119933d517321709223c98c65a567f697c4cfe2d6171fc1ed935733b3fe1a5769499664f4530c4add015
+2ccf4cf9b221848311cc3962fc8e97da51665acb6691597d868835936778a91df8cc64cde4255eca9ac9e778296b269fe3a576a09932c8bedfdc3b317a1797cd
+38cbb2bc6d166b8e18bfe3a576a0992c5ee2a5ac997c8e97b266f2395eca9ac9e778296b269fe3a5ac997c8e97620baf5ec3e25fbc943593cff152d64c3ec74b
+5933f91c2f65cde473bc943593cff152d64c3ec74b6d6b33f5d431d4451d65d1fadc0702aa5a1f16c4baf3102d7b8af2281eb4eec9e5636c0f5ac69df551d4e5
+ea387551475d71dbd271168f2f7f2d723c05f5e34751b5e7281ea83a675e81a8a31c7a8cebe550e7c5e367f5e8c9d5e5f152dbd44cf9490df5eb329a9c106262
+d87144027b8b16df85e821b0703342d5ce895666681a12d984e2110472134e7d55a3537ef2402816ca2f9e681b88a80f26906208f1b1e60cd51f42b0e351ae2f
+a28fb797d7f2081dc12082cef1cf742018ecc0ccab7748cb3f4ec9533623d8a57ac8a691103982e898d928079d978e9f5f40ce94ce7179a9ed69a6681b3ae669
+3e1d661a6f47a079102b22e61d9e468268ea5575ebd0d31840d7b30c06c301b4e5ccf7106d81306299543e3691461619993fda8840d73cd2091dff1a2b195ad3
+77f9b66a81657d0a99781702dab01b9a298ca1796edebd2abec0080a630ea799dc733c68ad2e19ff424a5c8063cc122fb53dcd944a8b89c82f0087262bd49f8b
+99e90822d0bec1ad8e6ffdd57c0779ca73ad3ce313dfa06f55d7d014ecc4e3e278c583f600c203641c53bd4bdbc400c2da101b9a29843e6edef948007b69b7db
+9299dc73f43631c7f89db7bbd25b9d97dad6cf4c1b99c97dc1250fda8a3f7cd9a82673169dc126f416c747a3e2559e18081b8c1a458fb88d99db8a9db31c33f1
+b2447a5edeae7bb768265e66caf1b8d3f942e3bba6586afa88986ce3cce9a5768e99e8959f3303dd6a82e89ccdc796124503e3b72375a1a4785700d5e2b9876e
+93dc68ce876abe8bede5cf19e256981ae47d153e93d103346ba478d5d6f0b01b1e52b791d94e04d921c72e1045236bc6608a8ef346a05c69ba5591d1b7682653
+8e447aa864fc0be36d3cc69a499df357183d44aa5d2610297a2628863ff7b0dc3396444eb25ce4047fd28d77563b76ad0022f1acca49afe62134e5ea38216e4b
+f58c25da92a11cf5b25af545b71f6edcc27af53c5660041d1bacc04c9c921c86f1b3265ea2c790c74b6d6b33d1436f6e81087a8854920fc38eba6228d6f9802d
+a049ce4f2899222f6d2467ac4345b90adb168d73dd7a7ac756b8a822b6f8e1988fbff81a57327a8c9bc951347e8391082fb5adcd64f9f078296b269fe3a5ac99
+7c8e97b266f2395eca9ac9e778296b269fe3a598fad7caaa6259335979266b262bcf64cd64e59180ff0358037565bf157e500000000049454e44ae426082}}}}}
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+3}{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+. }{\dbch\af8\dbch\af8\afs28\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+write a SQL query to find All Department along with the number of people there }{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+.}
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+==> }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{{\field{\*\fldinst HYPERLINK "http://localhost/phpmyadmin/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html" \\t "mysql_doc" }{\fldrslt {\cf9\ul\ulc0\langfe255\alang255\lang255\scaps0\caps0\cf17\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+SELECT}{}}}\scaps0\caps0\cf18\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+d}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_name}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+,}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{{\field{\*\fldinst HYPERLINK "http://localhost/phpmyadmin/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html%23function_count" \\t "mysql_doc" }{\fldrslt {\cf9\ul\ulc0\langfe255\alang255\lang255\scaps0\caps0\cf17\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+COUNT}{}}}\scaps0\caps0\cf20\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+(}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+emp_id}{\scaps0\caps0\cf20\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+)}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+FROM}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+employee}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+JOIN}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+department}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+d}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+on}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf5\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+=}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+d}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+GROUP}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+by}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+;}{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+ }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+OUTPUT:-}
+\par \shpwr2\shpwrk3\shpbypara\shpbyignore\shptop0\shpbxcolumn\shpbxignore\shpleft3304\pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+{\*\flymaincnt5\flyanchor0\flycntnt}{\shp{\*\shpinst\shpwr2\shpwrk3\shpbypara\shpbyignore\shptop0\shpbottom1755\shpbxcolumn\shpbxignore\shpleft3304\shpright6334{\sp{\sn shapeType}{\sv 75}}{\sp{\sn wzDescription}{\sv }}{\sp{\sn wzName}{\sv }}{\sp{\sn pib}{\sv {\pict\picscalex100\picscaley100\piccropl0\piccropr0\piccropt0\piccropb0\picw202\pich117\picwgoal3030\pichgoal1755\pngblip
+89504e470d0a1a0a0000000d49484452000000ca0000007508060000000ff97e08000000017352474200aece1ce90000000467414d410000b18f0bfc61050000
+00097048597300000ec300000ec301c76fa8640000114c49444154785eed9d6d571bd7b5c7e7bbf8d3c4cb482fef5da4bdf187e85d75d3408a41e24d9d7a25b7
+eb26e0074a41c4a9d3d8899b9824d7b179b45d03a9632098180b83ac96258760cb3c4aecee7d1e3467668e40c6114773bdff5dbf9599f3344767f6ffcc1915eb
+78c062b1f6151b85c5aa416c1416ab06b15158ac1ae495cb65606a87644b670e0fd2e6d67655ea216f67670798da21d9d299c383643388a61ef236373781a91d
+922d9d393cc43db01844530f79ebebebc0d40ec996ce1c1e249b4134f590572c1681a91d922d9d393c48368368ea216f6d6d0d98da21d9d299c383643388a61e
+f256575781a91d922d9d393c48368368ea21af50288095f16e38d2dc0dd76d79353077e91d7873dc9e176748b6f4c2dc4578bdb90dc74cf1c7e140fef53f1a79
+883936345681b11663ff0ef4ccd1f930bc49757e7311e644fe2cf4fc46b7af8e8d7605baace8d3c1efe1c1917d7efdd26c244f7c56d13f2aa33fe38b41b21944
+530f792b2b2b6065ea3c0efa79b869cbdb8fefff02bfc4816a9bb2e4c51c52347d4804c6c969918d9a82763c6ffe6446e4cf7e4246e88149950b2b57e00dcc7f
+734cd67f78f57470acc5d89f860f1fd2f96d68c3b264805f8af61ec0872d78de7d1b8f9fc196fcbf1560f22ca69d9d9227e52d7846d7bd82ed9e9d800dddeea1
+b101f4256e79eb59244f7cd696cbf010cb3cfe0a8fdf1f8a94d90f92cd209a7ac8cbe7f35061b84bdc10e2c407d228e322ef3a9c50e9479abbe06b55fedec7a7
+e0c8892e387142e59df808eee5bf83b3bfd565b19d61a3fd00580eeb35bfd705cdaa6cf3c7dfc93ca31f661b5fbf87e7274e19e53ff2fbf5def540bbb2ee2938
+3badaff7f3400aa7ddfbf80f70a4f50a3c5ed769eb2a50d6f0f83ab4605f8e7fb50cebbaceda164c5060bf45e3958707ca2872ac116d94053af78d72a4f92c8e
+fd0f15a3e8eb13e3dde13479ddf6bbeb9573db3dac694cc5fdc0fb4c6543f5edc86be9fb29e244d43b052d5dd2280f307ded1f3d98766e9fb6a2906c06d1d443
+5e2e9703c937f06bfc30c7bf921db94d034f370ff3be7c178fd56cb542b3c0890b7017d37ff8826ef069b8f04fca91b3e82f2ecec3e63fafc0713c6ec71976fb
+b96e3fccbcbce12d9f025517ed369f812f29efb9feb079b8d88a65deff46d411c18033f304e6c8f2e7e036159b96034e75ef5ec4d9bbe50a887947a477c9367f
+2648e134310e78f37f08a54b6e89403ff9ed4f81f4c541bf8e1c4739d6227f5219e5815ffff85757c4f81e79f7afca28b702ed49a31869df5d124fadb649795e
+ed1ed632a6b23fd8d65dca50f7e45d794feca83e7f318ffdb800bfc0638a051c39b820eeb91aabc54f459cb40e85ebef0dc966104d3de42d2d2d81e4a6baa1ab
+e2bc789706ea3c8c2d7d0bfdf4e130cfe71c0c619979bac1ad9fc1f22ad55f800b3880c7bfb80f4b3f5c1603d036a1dbb6715fdcf0e35f2ec22a9e8bb6c4f528
+ef9a306de57add37459d31baa9ad9f42569757c74b13f2e9477587ba8c7a82d3d0ff0ff3ba2f07299c26fa82377f3e942e91e3fac6dfbe0da48b7eaa3aabdfea
+b156f9e2f3f4c02d31aeb2fef12f16615b04affa5c6a4c34626ccc34710f7012cbd279f57b58cb98eafedc2e525bab70eb0cd6095d3f88eeb38e05dd8f5558fe
+d218abd5bfc3492cb7779c4421d90ca2a987bc6c360b127543af4c8af3cfdfa7c13c0fa3d92770930646af7f85b6e11996b92f82fb0ff0a729aa3f026f8bc1f9
+1eb2f72f49a3dcd16ddbf81e06c828541ecf655b74bd49f8e0d7d80ff16453b317de142a334a37b5e512dcd7e5d571f68ebca9a378fc90666a5c06c9952ca90c
+1b4fc2d73e38a470da93a5cfc4e77dfd821cbb6cf66bf86f3cff4f71fe0c72ea69f9b9ae333520dee1daef6dc0133a17fd47438b71ccc224bd5ba8cfa3ef8b18
+a7674b723cf05c8f89468c8d99a6eec1db37e9bcfa3dac654ce531cefcd7a8ad4969bad0f583187d0ef46312fef4967fbdecd427f8d443133d34ebee0fc96610
+4d3de42d2c2c80e4296c1933564b979ce54630efe9965c56e9bc5ffd9fac33f73905e579785b7ff382019a5f2fc042c15f57ebb25166214346f97c569c8bb6c4
+f50af088661d55ffbf5af0f8adbfc21d2c332266e14b30a7cbabe3057553a9af85f565b868cc9efff1e19dd0755f0e5224bdb00e257c41a780d0d7a5a02cd158
+607e61bda496357e7e1b2e45b69eaafa4fb722f9edd35bf054b43f0ebfc373394e057ccf51d7e91a977515626cccb442163e4253bd71457efe6af7b0963195c7
+3df0bbffd5f57b6072eba97fad08469f716cf295cff60ebcdd6d5c63fc1ca6e192b310aebf37249b4134f590373f3f0f15f025536b6b8b8eb7604de4ade191af
+ad35597e560cec65582ea98cd23aac84caebb2515600e307abac88f3153a51d793c752a5922824da15dd53c7a28cbe9ec8d07d95ed6ae9f67f2e48b6f4f91534
+8bc855c2177933dffc4ca4f0b854cf976359f91cfa3aa1f6e51098692b72c2f960489ddbef614d63fa77699adb9506f4585723d867ffb39530aefc6bdcfa0cfb
+77f6ce3e6d4521d90ca2a987bcb9b9393828336a069ab1e4692e9fd2b390c9efe17f6ed9cb373a245b7a23f2afe713f8143903972d792fc46d6994e150facbdd
+db9b70eeb7a7e162ee274bdede906c06d1d443decccc0c1c947c91668722e42d799a55f9c79e2195a098b7976f7448b6f4c6641536f17fabd6bc1740dcc4683b
+2f776ff350c4d5c241e280643388a61ef2eeddbb074ced906ce9cce141b21944530f7977efde05a67648b674e6f020d90ca2a987bca9a929606a87644b670e0f
+92cd209a7ac89b989800a67648b674e6f020d90ca2a9873cdb8518a6917121360a133b5c888dc2c40e1762a330b1c385d8284cec7021360a133b5c888dc2c40e
+170a1825fbe704b40fc9ff7a9e172201bd8bc10e334c3d08c45fc77024df85024659ca24213db20d3be55d953d0e9dc90190ff387817ca3bc10e33cccfce621f
+24921915731881694f4cde661917b21ac54f1b8534767ac928c3307565a70cbbbb65d851e7cb919864a3304c00b1044b8f41b9144c7721360ad390dce8f02091
+798c2bfe7224cf85d8284c83f1087a9b3c488d91474a967c360ac3c0e650caf8a655d2702ff3f46d57703d5886b2f162c53075a7a4bf71f5d570ef280c13075c
+888dc2c40e1762a330b1c385d8284cec7021360a133b5c888dc2c40e17f20a4f7e048689132ec4466162870bb15198d8e1426c142676b8101b85891d2ec44661
+62870bb15198d8e14216a3cc42d7510f5a06c3e93fc274f751e3cf9f8f42d78c993f082dc69f467b2d83465eb86ea8fdc15678ad7b3650fe6a8b2e23fb13c89f
+3903af1d3d03d32acf6c5720f2a80dddc7bdda50e7e1fe7bad70b592c71c26815809c511e14251a30c9e042fdd09a926338854e73b465535543e03894a305190
+3541bffe4500d478ca0f4c5137e1ff6000fd68450a07a162961b2948f62d54ae455cc7faa91b74bc007dc9242413c77c633ee88364b20f1e3c790edb65dd6427
+2407d415cadb50146d24a1efc17e6dd079b4fff8012a8633fbc5d4199cc08e19b14271149eb45d286294abed0918582ec1483a013d9527c62cf424d2305edaf4
+cb16b7a10c25d8a0e3c176480ce460bba8cbff081b258ad7e77e5d15bc327f134af901486833ee6b94348ce6d098c754f940902bac6d9846a9dec6747753a4ff
+854df1018c3e338702c59531ee0ffb932a0e7c5c286814747313baf91106ccc63206559b7eec7d031dc97e7868963598ee4d407a984c61cbaf52b7380c691dec
+fb1a2505d771007399041ca3a7d4818c52bd8d6b1d9ed17f7309c6cb2f97e8554c693398ee4201a34cf7847ff8ae5d054a16fa931d70cd282bca0f0e8ad9b938
+9c8644afb1fe170cc255f1c8b4d72dccf442e2458c8269c5ed1c6468f974ed8046c1345b1b346bf9fdc7a79d189a3c0ca83a669bcce140efa8c7fa72802e89e4
+b99061944168f37089a43248f981043489f78ce7f00867e2c08b15ad25715d2f96679b2390f68cf53f421fd46ba7f2aaaee5c5393daa1eb1d97e487a278dd97b
+10dabd4e181133891fe4d4d6362d9fc8c407348aad8de2f668a4ff85991e2cc346397ce4172fed237ae91e2de342be51f03dc3eb1c91ef1c0a194032808bf8d6
+9cef6f329e3609c8e4cb6a5d4fb3f0287454f290145a4ecd06a22e99c5c897d9ea5ab424425306f3d5fb4f20c875d9e44b180589b461e9bfd78129ba0fcca141
+5f2605ee43a3bdccd3cb6be4314701e4070b05bc2f6d12b3aca1505bc1ba8649f6cda76fb682012bca865fb4b1ffe11968a3a4fb584b1ba1feb349dc40711852
+c3bda3304c1c7021360a133b5c888dc2c40e1762a330b1c385d8284cec7021360a133b5c887f8585891d2ec4466162870bb15198d8e1426c142676b8101b8589
+1d2ec4466162870bb15198d8e14201a3d04eace13f71aeec9fb7d8074da13cfa53f41bd6ba09e85dacad9e60a803bca63ec89a69b67aa132627be54abe714db1
+6166e81ad45ef81a4ce361b9ef4d7f7e1428e34201a38ca493a07f9f41283f00c9840aaea50c243bcd7fd645da8512e551a0a78dbc3c96ada59e00833a91844e
+bc76cadcd4d2526f3ced55cae83dc82ba26b560cb80c99641a46745bba3ddeb8b5f1d929637468e561a073001e87760776a18851324bfe7920b8e8383deae799
+2ccb7295d99a3eacde2475af7ac4623fe68f41f931964b0dfbe9967a236814b96bf123a01f8b1837f7201703ac0dc846f9ffc08d8e04641e4737db75a1905182
+8f3ccf43e3e88e52a005f2900e15d814a418e8e29fd70a8c65d05ef5901b290cfe310c786c630c8dba673d7c6ac91d6247c4b6decbaa8d286494505d828d121f
+700996a00974279ae74255975ef9812424071efb1da5c00d2fa12233bad618a4f53268cf7ac3e2f7bdcc604ef6a9f568a0de38747a9dc61324177d6220d9a161
+f55423a36079555b8896916c94d890ed4bca09d492e74255975eb4e7fc183e612a2ff314b8559650f4be107ce1320279cf7a64c6c0afcea1c152bec12af5ca50
+a61fdcabbc8c97209749069e4c6206c227609f7822f1d22bdec8a5f568687f798d0bedf98e52daa5c055cb280ab4d0ecaf9758da54665e7a4cbd2f54ad478381
+d7cb992f6a65f1a30f09325dd860f8c47a6c9883ae99a7f34a9bd8567e573d01d928f166efa5b50b058c52dad581a6c1991c1754222db0b4d2f2cb974299f25d
+62af7a252847ae270db04bdf72503d7369a7f2cce59e38afc86c4bb6ed7fb386a8f6c22f864c238271b7c7bd72a1805118260eb8101b85891d2ec4466162870b
+b15198d8e1426c142676b8101b85891d2ec4bfc2c2c40e1762a330b1c385d8284cec7021360a133b5c888dc2c40e1762a330b1c385d8284cec70a1a05166cec0
+6be69fc39b9b9b0ae44694e13df5aeb61c0d6e142a9065fd3f839754ea0eb606d25f139baa9af5995715b16d762536a2b1e542865130b08fd106a62a07359e0a
+998236a24c7742aac9dce1d7dc54d48436180dfd2b4394dc8f8f76054e197979b9a575c46cccab08edfbefffa3d8f05ea1ce8df21c86d31e745cf33bb421f63f
+f5cfafb6276060b90423e984dc365ba557374ab5eda769eff904f456daa0cd48a303c2bc8acc426fc25f694457350db0f422638cb457e9242ecb9a12197884c1
+bcb19c81449b9f57dd28465b8256b5973c1923077dc7fc3c5e7a31926fa0837e1f410568645583b850e4659ecca245fbcaeb009eee09ee03ef79ed2ae85f64e9
+656e494d6651c9a8517cdc8607847915096ed9feb03f0989dee024ea428651e8bd41cff892e2701a927d0b22afcd4b07823e3f90802665a2175e7ad197064783
+ef393420a91b4619e6d524101bb3d0934842e6d1f3401917328c824ecef7077fceb2a91f72dbd8c9c176f03a478ca7019a687b14d2de4961acebf8780c3c6dc4
+07b52dbdd412abb80de5d18e605ec76864e37de61504632397f1572f894caed15ee6110a60952154de8622a56f8ab7fa4067cd47a4b95c1312f5824b2bad3219
+4fb7692ad23ef3aa523402a7122f062e147947619846c785d8284cec7021360a133b5c888dc2c40e1762a330b1c385d8284cec70214ffd97c562ed21360a8b55
+83d8282c560d62a3b05835888dc262d520360a8b5583d8282c560d62a3b058fb0ae0df76c1c3fa194593a00000000049454e44ae426082}}}}}
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+4}{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+. }{\dbch\af8\dbch\af8\afs28\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+write a SQL query to find All Department along with the total salary there }{\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab0\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+.}
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+==>}
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{{\field{\*\fldinst HYPERLINK "http://localhost/phpmyadmin/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html" \\t "mysql_doc" }{\fldrslt {\cf9\ul\ulc0\langfe255\alang255\lang255\scaps0\caps0\cf17\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+SELECT}{}}}\scaps0\caps0\cf18\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+d}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_name}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+,}{{\field{\*\fldinst HYPERLINK "http://localhost/phpmyadmin/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html%23function_sum" \\t "mysql_doc" }{\fldrslt {\cf9\ul\ulc0\langfe255\alang255\lang255\scaps0\caps0\cf17\strike0\expnd0\expndtw0\i0\ulnone\ulc0\b0\animtext0\dbch\af8\dbch\af8\afs28\ab\chbrdr\brdrdot\brdrw1\brdrcf1\brsp28\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+SUM}{}}}\scaps0\caps0\cf20\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+(}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+salary}{\scaps0\caps0\cf20\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+)}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+FROM}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+employee}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+JOIN}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+department}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+d}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+on}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf5\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+=}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+d}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+GROUP}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf17\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+BY}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f5\hich\af5
+ }{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+e}{\scaps0\caps0\cf19\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+.dept_id}{\scaps0\caps0\cf18\expnd0\expndtw0\i0\ulnone\ulc0\b0\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs19\lang9\loch\f6\hich\af6
+;}{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+ }
+\par \pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200{\ulnone\ulc0\b\dbch\af8\dbch\af8\afs28\ab\rtlch \ltrch\loch\fs28\lang9\loch\f5\hich\af5
+OUTPUT:-}
+\par \shpwr2\shpwrk3\shpbypara\shpbyignore\shptop0\shpbxcolumn\shpbxignore\shpleft3499\pard\plain \s0\widctlpar\hyphpar0\cf0\kerning1\dbch\af11\langfe2052\dbch\af9\afs24\alang1081\loch\f3\hich\af3\fs24\lang16393\sl240\slmult1\ql\sb0\sa200\ulnone\ulc0\b\afs28\ab\rtlch \ltrch\loch\fs28
+{\*\flymaincnt5\flyanchor0\flycntnt}{\shp{\*\shpinst\shpwr2\shpwrk3\shpbypara\shpbyignore\shptop0\shpbottom1875\shpbxcolumn\shpbxignore\shpleft3499\shpright6139{\sp{\sn shapeType}{\sv 75}}{\sp{\sn wzDescription}{\sv }}{\sp{\sn wzName}{\sv }}{\sp{\sn pib}{\sv {\pict\picscalex100\picscaley100\piccropl0\piccropr0\piccropt0\piccropb0\picw176\pich125\picwgoal2640\pichgoal1875\pngblip
+89504e470d0a1a0a0000000d49484452000000b00000007d080600000002c1e934000000017352474200aece1ce90000000467414d410000b18f0bfc61050000
+00097048597300000ec300000ec301c76fa864000012b249444154785eed9d6b731347bac7e7bbe4d36cca965e9e2af624e143ec9e657763b61c5bf29b43429d
+ec25b1b9f8104b0e09d92521956092437c912d2080b380ed988b1196646db9cc1ab3c2f822f19ce7e9cb4ccfa8472888de20fbf957fd2a337d9b9eeefff4f410
+c4e3018bd5c16203b33a5a6c6056478b0dccea68b181591d2d3630aba3c5066675b4d8c0ac8e161b98d5d16203b33a5a6c605647cbabd7ebc0b406c996cec443
+dadade89a55d79bbbbbbc0b406c996cec443b21957d3aebcadad2d605a83644b67e211636631aea65d799b9b9bc0b406c996cec443b21957d3aebc6ab50a4c6b
+906ce94c3c249b7135edcadbd8d800a63548b674261e92cdb89a76e5adafaf03d31a245b3a130fc9665c4dbbf2d6d6d6a081fc10bc766008c66d792db078f65d
+f85dde9ed7c9906ce9023166bd92df9e814591be00c3bfc5f33f4df9e5c6ff64e4fb7582b116f99416a9f3cbb30bfe79cb88f6df85e1454bde4f620a7ef782ed
+906cc6d5b42b6f7575151a983d89377e122ed9f29ec78f9fc21b3801bdb396bc0e87644b5f5d9d87936ff7c2c16f2a586216faf0fe0fcf50fa3df8b807cd3874
+c52f7b6908cf7b3e87fb742ec6990c7b14467fa4fc49f8833837eb50da51f8b4fc2fbf8d9611ed1f858fef5bf27e124f61e59ba3f0da079396bce6906cc6d5b4
+2baf52a980606a500d662f1cfa501a382ff2c6e1901ed40383f0ad2a7febb323f0daa141387448e51dfa046e556ec2f1dfebb2d8ce946abb012c87f50ebc3f08
+0754d9039fdd9479463fcc36be7d1fcf0f1d31ca7f12f4ebfdf150bbb2ee11383ea7aff77220d9d22b95bbd2a86fff15c76013e84f3f77378d7434a32e9b5706
+be47e7c260c3d077bc17de3a87f73f7716de52e7baceadcfde83d70e9f83d286ac2fc65ddfb718734c9ffbc41f17c21f4b6de0253c8e1957398f6a5cdfff52ce
+8baa2ff3e43536fe3e8cf54ef8f3df2a249b7135edca2b97cb502e7f07bfc11b902b08c0151a643230e65df81f3c3e3e2bd257e9293c741a6e60faddaff11807
+e7f43f2847ae3aff79e60e6cfde34b3888c77d73003b4fa86d1b77e4c4f67c01545db47be0185ca0bc27faa62a70e63096f9e03b51474c3c4eee35cc91e54fc0
+152a36270796eade38f32eb6f92588e75ea40fca365f12245b7ab9fc08b6ea720ca4418ec0b19b94aeee73e8b25f561bf82e9d5f970bc5e931bc1f34ff857364
+d62fe034955175a6068df2384f6f1bf304f52d7844e98fb640fe3f2f80eb647e6c8be648b68f06be87c731e3aae7f1531ab49d6d285d907db951be011fd15be5
+c203798d075f88793d3c49fd681d92cdb89a76e5158b4528162f412f76ee9d1fd6f1b808d51b34f92761a6f803646802fc89214ec02496b943374e2bc33ad55f
+82d3382807bfbe0dc5bb9f8b1bedbd46e971dc16134b83b38ee7a22d713dcabb281e26ff7a4397449d199a549cdc822eaf8e8bd7a409a8ee244db659172726f3
+77f3baed41b2a54baa20a74319f9cf17316d1d2e1fc363750f84b88f63df8bfbd67dbf5c3a8763f61ebca10c735918d8b86f5d1eaf51160f2fa6093e843191fe
+030cfd46a72168f83b7efb68e0bb54c63eaee1792cc2baeacba9f1cfe04d3276497aa2b8fe3dbc83f59acf6b23249b7135edca2b140a50284803bff5e5753c2e
+c0571fd04d9e84e9c243b84413a05660a91df81796b92d4cf71efcef2cd5cf89bddbc1af7f84c2edb3d2c057293d8e1f61940c4ce5f15cb645d7bb0e1fe244bc
+255618b552e0405399699ac89eb3705b9757c785abd204d3787c9f56b2c36a0516aac3d387d16bbf38245b7aa1f02dfc1aeff9d717e9f89e7898c3fdfe1b5c17
+e5aecb0541e5f97d7f78459843ac84c587b28eb57e011e3ed56badda6be335bf3a8a658ec939122b70686c707f7d3b7e5c436349e0787d4af9d41f3476518fdf
+ecdf707b836fdcfbeabc454836e36ada95b7b4b4044b4b8f615bbc7265c77b06e50a9cc3bcc7dbe6abb1177ef57f547e0916bf22b39c843fd05736e5a1712a9b
+6bb0b476453c0c66d94616204b06fe6a419c8bb6c4f5d660995e61aafe9b3d788cafb3ab5826275ea56761519757c74bca04d4d7b5cd129c31de18fff1f1d5c8
+75db83644b8f8e1f6d75ae6f3f16798fb7d130469fccbca0ef8fe10a190f8ff36bea5e07f3b2beda7b8e8beb5c85bffc97d1168e79e9b12e23d3de789bc64f95
+5706ce2ec68f6b682c056bb07953b6d7777313d6747afe04a6c9fec972ad41b21957d3aebc3b77ee8060635b25016c6fd3f1366c88bc0d3c0ab4bd21cb2f881b
+ff1c4a359551db84d548795db69155d8c47ab5cd5571be4a27ea7af258aa56138544bba27bea5894d1d71319baafb25d2dddfecb82644b1718e317f48708f729
+9467f45d56378eb7375499abb8801c858fae58da0a8d819418337d0d915e83cdd5f8710d8da5e67b32fe305c31e6eff2399cefe3578dfb6a0d92cdb89a76e52d
+2e2ec28b30af9edc794b9ee6f323c66ae1f3dff0c7cbf6f2af3a245bba5b1e4109f7bd6ffef59225efe5a3e7ece037cbf0c84fbf04277e7f14cee0c76ab4fcf3
+20d98cab6957defcfc3cbc08952a3db955a858f234ebf22f234554836ac55efe5587644b770d8d75ad5ab1e6bd6cf49c85af57812aaeda2f326f249b7135edca
+bb75eb1630ad41b2a533f1906cc6d5b42befc68d1bc0b406c996cec443b21957d3aebcd9d959605a83644b67e221d98cab6957deb56bd780690d922d9d898764
+33aea65d79b64619e665e15a6c60c629aec506669ce25a6c60c629aec506669ce25a6c60c629aec506669ce25abe8127fa3df0bc307d93aa230f46a03b92e779
+fd3061ad9b80530f5aab2798ec07af7b040a669aad5ea44ce1a384916f5c737b194e7547ae41ed45afb1df68188329e833c7b77f2a549ee6d49fff6859a37cfc
+3c485ccb37702e9d8451f54b15a1ca282413ea868b59480ee45586d633a8511e19306de455b06c2bf50468b6441206f0da297fb0ecf5f269cf2f23062d3da372
+50744dffc128413699869c6e4bb797cc42d14cdb4fd01c91c1cc31784063320afe943fababf2b4004843a673aaec76ddffc912293f300079553e87f3124cd533
+a8efea3a12d70a19385b342e6e4e3a1da7a7833c93922ce73fd9bb75788637b74bc7cdea110f32983f03f5152c973256004b3d1a2839a0cb308206d50328a06b
+fa0f061b380c1a32830f3b2d48e618e4d2f695733203d91532a969e0005a3c52337aac972193d46d2091559c702dc3c046470468e815c388a13c447796cc8306
+4cf879c66034ab874ca4709066d088d8c60c3e404debe12a5faf517e0ed2381125d5462364e0485d62df1ab826fe99d3e8435cc82421a95fb9e65bb386ab2dae
+a2c182613205296ca32ce681c0b9f0703596ad88b764b0ed90b896750b5119a59b5b095e0774f3d1ad40c30aa8358337a55ee74debe160444c961c59b65c2f0f
+0334487ebd72e30a8b1426a7d45b800c1c0caa5074f5d98f440cbc5bc77756bd26f376a771cec2636a35f0641a92d9b25cd404b4b508b684a52cfa26a3e650e1
+5ad62d04dddc8cf934d1cdc76c05e895d2fd91d969c3604deb192b80501e07311518dfaf8783842b44c2ff00a94119072af4bac20f9404be3146c40ace5b082b
+9131087da4a131bd8119e3dbc46ee089147aa4ac4c4f843e0c696b17c9475c2b760f5c7b468652db01baf9c86aa9b70adaec665e5aef9162ebd96eb60e655cf9
+13f430840c8ce00abf629896ae59a173bf4d6caba23f20d8c056226320e7578f5fe49b02693430ed77d3306d7ea4e97951ed2471f3fcb37dc4d59e45bf20e5eb
+41a485b6085a41f95a2453ee559bd5c37d59c3f58cd71ad58b0c28e599db1671eecb6c4bb66dae26babde0d5b70f691803f34f1622e385d09cfaf328b08c2b62
+ce83bf2531702ddfc00ce302d76203334e712d3630e314d76203334e712d3630e314d76203334e712d6fede13f81615ce15a6c60c629aec506669ce25a6c60c6
+29aec506669ce25a6c60c629aec506669ce25a8181e78fc12ffcbf5e87f48c453ab30083af7bd03366a6fd13cef7bc0e83f3e1345dd66f4be1d71d3b1c4affc5
+d042a43ee31e738e0ec3f948fef99ef05ccf0dbd6ecc9931e7c65cdae6d1b59481f166ba129035fe7e793e1531ebd83be0a50720d57d0ce6741a329e4ac2c83d
+a39c600946a2bf8a40d5b6286f0c7abc949157816ca2cbf210302e991bea82849ef07cca58b00263a72682f217fbcd1f6fd661a74ae9e65cdae7d1b594819fc0
+54da83fe8bc1859f5204016138c9f9be048c966a904b2760d8e864bc8153301e4ad31420934cc029bf8d27b053d703c2fcbba84ea52139b224cf275290cc14e4
+f1d8308c94d1d303a68117e05442afbe8836fbfc29480ce4e0a928f30496b3c9908708d7f2b71064d85c9fa593046e2fba13595846933d2d6521d11be4c51bd8
+684ba05f5364d8328c740579bc85f819d8aa4179a44bce415f0eea3b4f54fa8e584cc6f10d1c18f83be8377fbca9dfcef74620999af0dbbc379284c4a9f05cba
+56e8238e4cac55c974fbc69a1b36fff10aa2cfdf33b5be85a8a927952013ab64d434be9ea27b6bc62db4c7eda2a59694eb03eff5e8d6d034f016ce5e307ff733
+caa81603a7a7d483a0702d6560dacb8437f2c12b660c7ae93753aa02a9329a806e65ee9fbc85a08fc5c860d18098fb2dc63d6450df6c850c249323702f92efcf
+4968ce1660389184ec32d6ad4e41da5fcc647aa6a0ea285c4b19189fb04a26fccf397567a04caf95317c3afd7d8ea4ba433fc37e47749c6e34b43a8b1bb56d21
+d456a1ba03f569f52fc568faa743fb6dc63d4f6b79e39f35c00ff8f20e548dfc908171cecad9e02d9cc896d5370bfa863e001bd2035c2bd84290b154a2505ddd
+10ee95d05da14e99af1473db2124ea85b7085ac13e2b52a9a17dc63d34875a8d1fd1d18ff8aa31a1fe3c12c65c86d215ae15da0333cccbc6b5d8c08c535c8b0d
+cc38c5b5d8c08c535c8b0dcc38c5b5d8c08c535c8b7f95cc38c5b5d8c08c535c8b0dcc38c5b5d8c08c535c8b0dcc38c5b5d8c08c535c8b0dcc38c5b522069641
+eea2a19288e611199b477d0cd78db43fd91f091263062091fd09e5fb814582807c2154d091897eddc7666da8f386489491489f7b90c6c8accd23a8c6cebf0ea2
+8844e79170adb0812753e2879b691d334c213a1f1b1993269f82aca83c14c50bd33723ea26b341444890c1457c13e7287453c9bf16110418a1802d4948d26fe8
+f480f9c14a2866836e72208878a4e24004416b9ab541e78dfdc71b680c7fbbc708c535c1f11bc81bf12fe80127531a4161684e1a2372d2d8e91f3b54709ca30b
+dbbfd9c014466974e5194ce3e4cb9055c473226352ec3033a61c428323037e047543c145cc30b6cf35701a662892a719bed6185881b50dd3c0f16dc8705f91e8
+3af206f6475018326b6ac608e8826f2cfac545de8cad17139193c2d5fae1b964f8b368682ed70a0c8c3792c00e9771226ba1d0afcd236352c4c7f47463741a49
+4c5d0aaca707a70503e7f081a1704e7e082e7f60152d1838ae0d712dbfffe65662ef6f230811fb6d25589c686b4161d2ea2a84b01ce798889c348e4638b4228e
+efcf16e8b03062c65d23d26a029b47c6dc9d46f3443a4d4698105b047b5d1968fa271818d376eb2b788cafa8dc0b1a18d36c6d84a34bead0531518b5f57bcfa1
+42c7fa6f9fc6e8a972b5a57109b618fe98590c1c5dcc5c4b19983a1efde1a65aad9e1719b346a165c37b1ff18120567055d7f2c1443192c52b9a9e744f45e854
+f9297cdaa7c52b2d309f8853466f061ad41734b0ad8ddd7a63ff4510721c8f3d6f606be85825119e77142ab4750c7df41a412a55885a39772abda4db92b89634
+b025d4a89c5869ace69131e9a6a9acce43d2f828a83d73635d342f669bc11057f06109e7eba7dd349f51f6850d8c34b461e93f4eca8c25f8df5ea3e9f6cfdcaa
+a9ed971e9f2022278e1d7df036a407b89634b0fa68312f1c7d6dc447c6d4650d45da0ad735ccfbdcfcc6e890a26cf4030bfb1f8d1219441e6da58d48fff78179
+091a87e85cf8a069cdc89ee61c85c6daf8e30c8ed4c9ec395c8b0dcc38c5b5d8c08c535c8b0dcc38c5b5d8c08c535c8b0dcc38c5b5f857c98c535c8b0dcc38c5
+b5d8c08c535c8b0dcc38c5b5d8c08c535c8b0dcc38c5b5d8c08c535ccb37304562a44841e1888c1a5b344ea6b3a1c03e96f93523b69ac178e22272be1a913a65
+88240aea11c442c8c300fd856671cc8108f71a14662ba57fc150c942a28bcc4a115bfb61da4f4e40af087f161791f39589d4191838b8f804a422a19798bd4328
+880b85cba2b99e1f86443a03a7740ce544164a54262e22e7ab14a9930dbc5fa155b41b3214668b02177a09116a96442b70176d0be22272be4a913ad9c0fb10b1
+dfed839cde22922107a6fded2205bbf4fabf8b8fc81997aece09d76203ef57e8e3ab6b04ca4608d9b5ea32ee63bbfd7decf93e4f06018f8bc8f9ea44ea6403ef
+2ff0632dfacf72893f7178023b65fca0d369895119ad353622e72b14a993fef4211cee153ba7a375327b0c4b24553dd766c45673fee3227272a44e662fe35a6c
+60c629aec506669ce25a6c60c629aec506669ce25a6c60c629aee5a9ffb2581d293630aba3c5066675b4d8c0ac8e161b98d5d16203b33a5a6c6056478b0dccea
+68b181591d2c80ff07fad05cd32b4562190000000049454e44ae426082}}}}}
+
+\par }
